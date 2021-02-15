@@ -1,0 +1,66 @@
+.container {
+  background-image: url("../Img/hack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+}
+
+.card_holder {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px -10px gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_file{
+  width: 100%;
+  background-color: gray;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .card_holder {
+    height: 70%;
+    justify-content: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card_body {
+    height: 150%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .input_file {
+    background-color: gray;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card_name {
+    background-color: red;
+
+    height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .images {
+    background-color: red;
+    margin-top: -110px;
+    height: 0;
+  }
+}

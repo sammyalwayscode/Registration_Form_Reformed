@@ -1,0 +1,59 @@
+*{
+  font-family: poppins;
+}
+
+
+.BodyDiv{
+  height: 100%;
+  width: 100%;
+  /* background-color: darkcyan; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .ImageDiv1{
+  height: 300px;
+  width: 100%;
+  background-color:black;
+  margin-top: 300px;
+} */
+
+.heroImg{
+  height: 300px;
+  width: 100vw;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* @media screen and (max-width: 786px){
+  .Cardsdiv{
+    width: 600px;
+  }
+} */
+
+
+
+
+/* .Video{
+  height: 200px;
+  width: 1120px;
+  border: none;
+  outline: none;
+} */
+
+.Cardsdiv{
+  width: 90%;
+  /* background-color: darkblue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 786px){
+  .Cardsdiv{
+    width: 600px;
+  }
+}
