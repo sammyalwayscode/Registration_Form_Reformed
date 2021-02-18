@@ -10,7 +10,7 @@
 }
 
 .card_holder {
-  height: 500px;
+  height: 600px;
   width: 400px;
   background-color: white;
   border-radius: 20px;
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 480px) {
   .card_holder {
-    height: 70%;
+    height: 80%;
     justify-content: center;
     width: 85%;
     display: flex;

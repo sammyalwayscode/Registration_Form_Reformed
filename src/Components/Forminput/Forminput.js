@@ -121,8 +121,7 @@ function Forminput() {
             style={{ marginTop: "50px" }}
           />
 
-          <strong style={{ width: '280px', textAlign: 'center', fontSize: 'small', marginTop: '10px' }}>Please Wait For 5 seconds While Your Information Is Been Processed Before You Click Summit</strong>
-
+          <strong style={{ width: '280px', textAlign: 'center', fontSize: 'small', marginTop: '10px' }}>Please Wait For 5 seconds While Your Information Is Been Processed Before You Click Summit😏 </strong>
           <Button
             onClick={() => {
               UploadData();
