@@ -1,0 +1,79 @@
+.thanksContainerMain{
+  height:100%;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.firstThanksText{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .firstThanksText{
+    font-size: 13px;
+  }
+}
+
+.secondThanksText{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+  .secondThanksText{
+    font-size: larger;
+  }
+}
+
+.cardHolder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: darkcyan; */
+}
+
+.eventCard{
+  margin: 10px;
+}
+
+.cardNo1{
+  height: 250px;
+  width: 300px;
+  background-color: darkred;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  color: white;
+  border-radius: 7px;
+}
+
+.cardNo2{
+  height: 250px;
+  width: 300px;
+  background-color : darkgreen;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  color: white;
+  border-radius: 7px;
+}
+
+.eventDay{
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  /* background-color: blue; */
+}
+
+.venueDiv{
+  width: 200px;
+}

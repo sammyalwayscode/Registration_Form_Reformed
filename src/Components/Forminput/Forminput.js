@@ -9,8 +9,9 @@ import {
 } from "@ant-design/icons";
 import "antd/dist/antd.css";
 import pic from "../Img/code.jpg";
+import Default from "../Img/hack.jpg"
 import { app } from "../Base/Firebase";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import CallOutlinedIcon from '@material-ui/icons/CallOutlined';
 const db = app.firestore();
 function Forminput() {
@@ -32,6 +33,8 @@ function Forminput() {
     await fileRef.put(File);
     setFileUrl(await fileRef.getDownloadURL());
   };
+
+
 
   const UploadData = async () => {
     await db
@@ -71,8 +74,8 @@ function Forminput() {
             onChange={(e) => {
               setName(e.target.value);
             }}
-            style={{ backgroundColor: "red" }}
-            style={{ marginTop: "10px" }}
+            style={{ backgroundColor: "red", zIndex: "" }}
+            style={{ marginTop: "10px", zIndex: '9' }}
             size="large"
             placeholder="FullName"
             name=" name"
@@ -84,7 +87,7 @@ function Forminput() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            style={{ backgroundColor: "red", fontSize: "5px" }}
+            style={{ backgroundColor: "red", fontSize: "5px", zIndex: '-999px' }}
             style={{ marginTop: "15px" }}
             size="large"
             placeholder="Email"
@@ -95,7 +98,7 @@ function Forminput() {
             onChange={(e) => {
               setSex(e.target.value);
             }}
-            style={{ backgroundColor: "red", fontSize: "5px" }}
+            style={{ backgroundColor: "red", fontSize: "5px", zIndex: '-999px' }}
             style={{ marginTop: "15px" }}
             size="large"
             placeholder="Gender"
@@ -107,7 +110,7 @@ function Forminput() {
             onChange={(e) => {
               setNum(e.target.value);
             }}
-            style={{ backgroundColor: "red" }}
+            style={{ backgroundColor: "red", zIndex: '-999px' }}
             style={{ marginTop: "15px" }}
             size="large"
             placeholder="+234 565 75646"
@@ -122,10 +125,11 @@ function Forminput() {
           />
 
           <strong style={{ width: '280px', textAlign: 'center', fontSize: 'small', marginTop: '10px' }}>Please Wait For 5 seconds While Your Information Is Been Processed Before You Click Summit😏 </strong>
+
           <Button
             onClick={() => {
               UploadData();
-              hist.push("/thanks");
+              hist.push("/thanks")
             }}
             style={{
               marginTop: "30px",
@@ -136,6 +140,7 @@ function Forminput() {
           >
             SUBMIT
           </Button>
+
           <div className="images">
             <img
               className="images"
